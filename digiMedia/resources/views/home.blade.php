@@ -193,7 +193,7 @@
 </tr>
 </thead>
 <tbody class="font-mono-data text-mono-data">
-<!-- @foreach ($tracks as $track) -->
+
 <!-- Mock Row 1: Completed -->
 <tr class="border-b border-slate-border hover:bg-surface-container-low transition-colors group">
 <td class="py-4 px-6 text-on-surface font-medium flex items-center gap-3">
@@ -251,7 +251,6 @@
                                         </button>
 </td>
 </tr>
-<!-- @endforeach -->
 </tbody>
 </table>
 </div>
