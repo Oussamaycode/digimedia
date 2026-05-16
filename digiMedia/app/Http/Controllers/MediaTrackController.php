@@ -6,6 +6,7 @@ namespace App\Http\Controllers;
 use App\Models\mediaTrack;
 use App\Http\Requests\StoremediaTracksRequest;
 use App\Http\Requests\UpdatemediaTracksRequest;
+use Illuminate\Http\Request;
 
 class MediaTrackController extends Controller
 {
