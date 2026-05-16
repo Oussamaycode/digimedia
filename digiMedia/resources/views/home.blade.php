@@ -170,7 +170,7 @@
 </div>
 <h2 class="font-headline-md text-headline-md text-on-surface mb-2">Ingest Media</h2>
 <p class="font-body-md text-body-md text-on-surface-variant mb-8">Drag-and-drop .mp3 and .wav files here to begin processing.</p>
-<form action="" method="POST">
+<form action="{{route('media.upload')}}" method="POST">
 @csrf
 <input type="file" id="audio_file_input" name="audio_file" class="hidden" accept=".mp4,.mp3,.wav,.aac,.m4a" onchange="updateButtonText(this)">
 <!-- Your styled button (now with an onclick trigger) -->
