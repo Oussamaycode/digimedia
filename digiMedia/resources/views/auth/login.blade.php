@@ -119,7 +119,7 @@
 <label class="block font-label-md text-label-md text-on-surface" for="email">Email Address</label>
 <div class="relative">
 <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-status-idle" style="font-variation-settings: 'FILL' 0;">mail</span>
-<input class="w-full bg-surface-container-lowest border border-slate-border rounded text-on-surface pl-10 pr-3 py-2 font-body-md text-body-md focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/20 transition-all placeholder:text-status-idle" id="email" placeholder="engineer@digimedia.io" required="" type="email"/>
+<input class="w-full bg-surface-container-lowest border border-slate-border rounded text-on-surface pl-10 pr-3 py-2 font-body-md text-body-md focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/20 transition-all placeholder:text-status-idle" id="email" placeholder="engineer@digimedia.io" required="" type="email" name="email"/>
 </div>
 </div>
 <div class="space-y-2">
@@ -129,7 +129,7 @@
 </div>
 <div class="relative">
 <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-status-idle" style="font-variation-settings: 'FILL' 0;">lock</span>
-<input class="w-full bg-surface-container-lowest border border-slate-border rounded text-on-surface pl-10 pr-3 py-2 font-body-md text-body-md focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/20 transition-all placeholder:text-status-idle" id="password" placeholder="••••••••" required="" type="password"/>
+<input class="w-full bg-surface-container-lowest border border-slate-border rounded text-on-surface pl-10 pr-3 py-2 font-body-md text-body-md focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/20 transition-all placeholder:text-status-idle" id="password" placeholder="••••••••" required="" type="password" name="passowrd"/>
 </div>
 </div>
 <div class="flex items-center">
