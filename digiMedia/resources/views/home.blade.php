@@ -277,6 +277,12 @@
 </div>
 </footer>
 <script>
-    
+function updateButtonText(input) {
+    const buttonText = document.getElementById('upload_button_text');
+    if (input.files && input.files[0]) {
+        // Change the button text to the selected filename
+        buttonText.textContent = input.files[0].name;
+    }
+}
 </script>
 </body></html>
