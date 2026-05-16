@@ -25,4 +25,4 @@ Route::get('home',function(){
 
 Route::post('/register',[AuthController::class,'register'])->name('register');
 Route::post('/Login',[AuthController::class,'login'])->name('login');
-Route::post('/home',[MediaTrackController::class,''])->name('media.upload');
+Route::post('/home',[MediaTrackController::class,'upload'])->name('media.upload');
