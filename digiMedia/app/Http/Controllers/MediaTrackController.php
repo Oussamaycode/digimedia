@@ -77,7 +77,8 @@ class MediaTrackController extends Controller
         $request->validate([
             'audio_file' => 'required|mimes:mp4,mp3,wav,aac,m4a|max:20480',
         ]);
-        
+
+        return "hi";
 
         $file = $request->file('audio_file');
         
