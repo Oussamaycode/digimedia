@@ -72,6 +72,9 @@ class MediaTrackController extends Controller
 
     public function upload(Request $request)
     {
+        
+        return "hi";
+        
         // 1. Validate the file type and size (Max 20MB for a quick test audio)
         $request->validate([
             'audio_file' => 'required|mimes:mp3,wav,aac,m4a|max:20480',
