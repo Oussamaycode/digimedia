@@ -6,7 +6,7 @@ use App\Models\mediaTrack;
 use App\Http\Requests\StoremediaTracksRequest;
 use App\Http\Requests\UpdatemediaTracksRequest;
 
-class MediaTracksController extends Controller
+class MediaTrackController extends Controller
 {
     /**
      * Display a listing of the resource.
