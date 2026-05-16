@@ -286,11 +286,13 @@
 </div>
 </footer>
 <script>
-function updateButtonText(input) {
-    const buttonText = document.getElementById('upload_button_text');
+function submitFormOnSelect(input) {
     if (input.files && input.files[0]) {
-        // Change the button text to the selected filename
-        buttonText.textContent = input.files[0].name;
+        // 1. Change button text to show it's working
+        document.getElementById('upload_button_text').textContent = "Uploading: " + input.files[0].name;
+        
+        // 2. Automatically submit the form now that a file is actually chosen
+        document.getElementById('upload_form').submit();
     }
 }
 </script>
