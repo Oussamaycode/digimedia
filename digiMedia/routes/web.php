@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\MediaTrackController;
 
 Route::get('/', function () {
     return view('auth.login');

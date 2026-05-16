@@ -175,7 +175,7 @@
 <input type="file" id="audio_file_input" name="audio_file" class="hidden" accept=".mp4,.mp3,.wav,.aac,.m4a" onchange="updateButtonText(this)">
 <!-- Your styled button (now with an onclick trigger) -->
 <button
-    type="button"
+    type="submit"
     onclick="document.getElementById('audio_file_input').click()" 
     class="bg-lime-500 hover:bg-lime-600 text-slate-950 font-semibold px-8 py-3 rounded-lg w-full active:scale-95 transition-all duration-150 flex items-center justify-center gap-2"
 >
