@@ -114,7 +114,8 @@
 <h1 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-2">SincroAPI</h1>
 <p class="font-body-md text-body-md text-on-surface-variant">Log in to your high-fidelity workspace.</p>
 </div>
-<form class="space-y-6">
+<form action="{{route('login')}}" method="POST" class="space-y-6">
+ @csrf
 <div class="space-y-2">
 <label class="block font-label-md text-label-md text-on-surface" for="email">Email Address</label>
 <div class="relative">
@@ -146,7 +147,7 @@
 <div class="mt-8 text-center border-t border-slate-border pt-6">
 <p class="font-body-md text-body-md text-on-surface-variant">
                 New to SincroAPI? 
-                <a class="font-label-md text-label-md text-primary hover:text-primary-fixed transition-colors ml-1" href="#">Create an account</a>
+                <a class="font-label-md text-label-md text-primary hover:text-primary-fixed transition-colors ml-1" href="{{route('register')}}">Create an account</a>
 </p>
 </div>
 </div>

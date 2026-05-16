@@ -123,7 +123,8 @@
 <div class="bg-slate-surface border border-slate-border rounded-xl p-6 md:p-8 relative overflow-hidden">
 <!-- Subtle glow effect top edge -->
 <div class="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-primary/30 to-transparent"></div>
-<form class="space-y-6">
+<form action="{{route('register')}}" method="POST" class="space-y-6">
+ @csrf
 <!-- Grid for Form Fields -->
 <div class="space-y-4">
 <!-- Name Field -->
@@ -152,10 +153,10 @@
 </div>
 <!-- Confirm Password Field -->
 <div class="space-y-2">
-<label class="font-label-md text-label-md text-on-surface block" for="confirm_password">Confirm Password</label>
+<label class="font-label-md text-label-md text-on-surface block" for="password_confirmation" >Confirm Password</label>
 <div class="relative">
 <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none" style="font-variation-settings: 'FILL' 1;">lock_reset</span>
-<input class="w-full bg-surface-container-lowest border border-slate-border rounded-DEFAULT py-2.5 pl-10 pr-4 text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/20 transition-all font-body-md text-body-md" id="confirm_password" name="confirm_password" placeholder="••••••••" required="" type="password"/>
+<input class="w-full bg-surface-container-lowest border border-slate-border rounded-DEFAULT py-2.5 pl-10 pr-4 text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/20 transition-all font-body-md text-body-md" id="confirm_password" name="password_confirmation" placeholder="••••••••" required="" type="password"/>
 </div>
 </div>
 </div>
