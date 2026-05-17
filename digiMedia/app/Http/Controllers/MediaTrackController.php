@@ -78,7 +78,6 @@ class MediaTrackController extends Controller
             'audio_file' => ['required'],
         ]);
 
-        return "hi";
 
         $file = $request->file('audio_file');
         
