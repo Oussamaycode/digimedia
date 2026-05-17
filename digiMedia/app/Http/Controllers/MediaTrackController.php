@@ -91,7 +91,8 @@ class MediaTrackController extends Controller
         $track = MediaTrack::create([
             'original_filename' => $file->getClientOriginalName(),
             'audio_path' => $storedPath,
-            'status' => 'processing', // Set to processing since we are about to hand it off
+            'status' => 'processing',
+            'user_id' => auth()->user()->id,
         ]);
 
         try {
