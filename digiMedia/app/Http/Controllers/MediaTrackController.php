@@ -109,10 +109,7 @@ class MediaTrackController extends Controller
                 'callback_url' => route('media.callback', ['id' => $track->id])
             ]);
 
-            if ($response->failed()) {
-                throw new \Exception('Vast.ai server rejected the file.');
-            }
-
+            
         } catch (\Exception $e) {
             // If the Vast.ai server is down, update status to failed
             $track->update([
